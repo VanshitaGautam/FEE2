@@ -1,0 +1,35 @@
+/*UNIVERSAL SELECTOR*/
+ *{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 20px;
+}
+/*id selector*/
+#superhero{
+    background-color: darkturquoise;
+    text-decoration: overline;
+}
+/* class selector*/
+.super{
+    color:slateblue;
+}
+.super{
+    color: cyan;
+}
+/*elment selector*/
+h1{
+    color: teal;
+    text-decoration-line: underline;
+}
+/* attribute selector*/
+input[type="text"]
+{
+    background-color: crimson;
+}
+input[type="password"]
+{
+    background-color: indigo;
+}
+.parra{
+    background-color: darkslategray;
+    text-decoration:underline/;
+}

@@ -1,0 +1,15 @@
+body{
+    background: url(https://cuiet.codebrigade.in/images/Chitkara_University_pic.jpg)  no-repeat center center fixed;
+    border-top: 6px solid red;
+    background-size: cover;
+   }
+   .container{
+       text-align: center;
+   }
+   .privacy-policy{
+       text-decoration: underline;
+   }
+   .photo{
+    position: fixed;
+     right: 10px;
+   }
