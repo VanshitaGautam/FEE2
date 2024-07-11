@@ -29,7 +29,7 @@ body{
     direction: ltr;
     text-align: left;
 }
-.powered{
-    width: 50px;
-  height: 30px;
+.button{
+    background-color: red;
+    cursor: pointer;
 }
