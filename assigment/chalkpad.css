@@ -5,11 +5,31 @@ body{
    }
    .container{
        text-align: center;
+    
    }
    .privacy-policy{
        text-decoration: underline;
+       direction: ltr;
+       text-align: left;
    }
    .photo{
     position: fixed;
      right: 10px;
    }
+   .login-form {
+    width: 300px;
+    margin: 50px;
+    padding: 20px;
+    background-color: #fff;
+    height: 650px;
+    position: fixed;
+     right: 250px;
+  }
+  form {
+    direction: ltr;
+    text-align: left;
+}
+.powered{
+    width: 50px;
+  height: 30px;
+}
