@@ -1,35 +1,20 @@
-/*UNIVERSAL SELECTOR*/
- *{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 20px;
+/*descendent selector*/
+ul li a{
+    color: cadetblue;
+    font-size: 20px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/*id selector*/
-#superhero{
-    background-color: darkturquoise;
-    text-decoration: overline;
+ol>li{
+    background-color:blueviolet;
 }
-/* class selector*/
-.super{
-    color:slateblue;
+/*child combinator selector if we > only grandfather child/father is selected not you/father child */
+/*adjacent selector the next to h3 p got styling style works in downwrd flow*/
+h3+p{
+    border-color: chartreuse;
+    border-top: 2px solid burlywood;
 }
-.super{
-    color: cyan;
-}
-/*elment selector*/
-h1{
-    color: teal;
-    text-decoration-line: underline;
-}
-/* attribute selector*/
-input[type="text"]
-{
-    background-color: crimson;
-}
-input[type="password"]
-{
-    background-color: indigo;
-}
-.parra{
-    background-color: darkslategray;
-    text-decoration:underline/;
+/*general sibling*/
+div~p{
+    background-color: darkolivegreen;
 }

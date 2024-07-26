@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID STYLE</title>
+    <style>
+        section{
+    width: 80vw;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    /*grid-template-rows: 150px 150px 150px ;
+    grid-template-rows: repeat(3,300px);*/
+    gap: 20px 10px;
+    grid-template-rows:repeat(4fr,4fr,4fr,4fr);
+        }
+        div{
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div class="" style="background-color:aqua"></div>
+    <div class="" style="background-color:rgb(255, 0, 234)"></div>
+    <div class="" style="background-color:rgb(111, 0, 255)"></div>
+    <div class="" style="background-color:rgb(255, 8, 0)"></div>
+    <div class="" style="background-color:rgb(183, 255, 0)"></div>
+</section>
+</body>
+</html>
