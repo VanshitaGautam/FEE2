@@ -14,45 +14,122 @@
     <title>Forms</title>
 </head>
 <body>
-    <h1>College Admission Form</h1><br>
-    <form id="college-admission-form">
-        <label for="name">Name</label>
-        <input type="text" id="name"><br>
-
-        <label for="email">Email</label>
-        <input type="email" id="email"><br>
-
-        <label for="password">Password</label>
-        <input type="password" id="password"><br>
-
-        <label for="gender">Gender:</label>
-        
-        <label for="gender">Male</label>
-        <input type="radio" name="gender" id="male">
-
-        <label for="gender">Female</label>
-        <input type="radio" name="gender" id="female"><br>
-
-        <label for="comment">About Me</label>
-        <textarea name="comment" id="comment"></textarea><br>
-
-        <label for="dob">D.O.B.</label>
-        <input type="date"><br>
-
-        <label for="subjects">Optional Subject</label>
-        <select name="subjects" id="subjects">
-            <option value="sports">Sports</option>
-            <option value="Music">Music</option>
-            <option value="Dancing">Dancing</option>
-        </select><br>
-
-        <input type="checkbox" id="tnc">
-        <label for="tnc">I agree to terms and condition</label><br>
-		<br>
-        <input type="submit">
-
-
-    </form>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>College Admission Form</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f7f7f7;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .container {
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            
+            .form-group {
+                margin-bottom: 15px;
+            }
+            
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            
+            input[type="text"],
+            input[type="date"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="number"],
+            textarea,
+            select,
+            input[type="file"] {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+            }
+            
+            textarea {
+                resize: vertical;
+            }
+            
+            button {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            
+            button:hover {
+                background-color: #0056b3;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>College Admission Form</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="course">Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="computer_science">Computer Science</option>
+                        <option value="electrical_engineering">Electrical Engineering</option>
+                        <option value="mechanical_engineering">Mechanical Engineering</option>
+                        <option value="civil_engineering">Civil Engineering</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="highschool">High School Percentage:</label>
+                    <input type="number" id="highschool" name="highschool" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="photo">Upload Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+    </html>
+    
     
 </body>
 </html>
