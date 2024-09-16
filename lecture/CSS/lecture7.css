@@ -15,7 +15,7 @@ font-size: 20px;
 .super{
     color: cyan;
 }
-/*elment selector*/
+/*element selector*/
 h1{
     color: teal;
     text-decoration-line: underline;
@@ -31,5 +31,5 @@ input[type="password"]
 }
 .parra{
     background-color: darkslategray;
-    text-decoration:underline/;
+    text-decoration:underline;
 }
