@@ -1,0 +1,20 @@
+div {
+  position:absolute;
+  top: 0;
+  background-color: rgb(179, 182, 245);
+  display: flex;
+  justify-content: center;
+  border: 2px solid #eeeef7;
+  width: 100vw;
+}
+
+ul {
+  display: flex;
+  gap: 5rem;
+  list-style-type: none;
+  font-weight: bold;
+}
+ul:hover {
+  color: #0d0de3; 
+  transition: color 0.3s ease; 
+}
